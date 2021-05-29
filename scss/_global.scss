@@ -1,27 +1,10 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-html {
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-}
+
 body {
-    background: linear-gradient(45deg, #8277FF, #FF9B9B);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    user-select: none; 
-    overflow: hidden;
+    background-color: #facdb3;
+    font-family: 'Roboto', sans-serif;
 }
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-

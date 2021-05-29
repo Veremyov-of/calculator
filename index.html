@@ -5,36 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">   
 </head>
 <body>
-    <div class="calculator">
-        <div class="calculator_screen"></div>
-        <div class="calculator_btns">
-            <button id="btnClick" class="calculator_btns_btn">(</button>
-            <button id="btnClick" class="calculator_btns_btn">)</button>
-            <button id="btnClick" class="calculator_btns_btn">%</button>
-            <button id="btnClick" class="calculator_btns_btn">/</button>
-            <button id="btnClick" class="calculator_btns_btn">7</button>
-            <button id="btnClick" class="calculator_btns_btn">8</button>
-            <button id="btnClick" class="calculator_btns_btn">9</button>
-            <button id="btnClick" class="calculator_btns_btn">*</button>
-            <button id="btnClick" class="calculator_btns_btn">4</button>
-            <button id="btnClick" class="calculator_btns_btn">5</button>
-            <button id="btnClick" class="calculator_btns_btn">6</button>
-            <button id="btnClick" class="calculator_btns_btn">-</button>
-            <button id="btnClick" class="calculator_btns_btn">1</button>
-            <button id="btnClick" class="calculator_btns_btn">2</button>
-            <button id="btnClick" class="calculator_btns_btn">3</button>
-            <button id="btnClick" class="calculator_btns_btn">+</button>
-            <button id="AC" class="calculator_btns_btn">AC</button>
-            <button id="btnClick" class="calculator_btns_btn">0</button>
-            <button id="CE" class="calculator_btns_btn">CE</button>
-            <button id="equally" class="calculator_btns_btn equally">=</button>
+    <section>
+        <div class="calc">
+
+            <!--* start Screen -->
+            <div class="calc_screen">
+                <div id="history" class="calc_screen_history"></div>
+                <input id="outputScreen" class="calc_screen_output" disabled value="">
+            </div>
+            <!--! end Screen -->
+
+            <!--* start buttons -->
+            <div class="calc_items">
+                <button id="btn" class="calc_items_btn" type="button">(</button>
+                <button id="btn" class="calc_items_btn" type="button">)</button>
+                <button id="btn" class="calc_items_btn" type="button">%</button>
+                <button id="btn" class="calc_items_btn" type="button">/</button>
+
+                <button id="btn" class="calc_items_btn" type="button">7</button>
+                <button id="btn" class="calc_items_btn" type="button">8</button>
+                <button id="btn" class="calc_items_btn" type="button">9</button>
+                <button id="btn" class="calc_items_btn" type="button">*</button>
+
+                <button id="btn" class="calc_items_btn" type="button">4</button>
+                <button id="btn" class="calc_items_btn" type="button">5</button>
+                <button id="btn" class="calc_items_btn" type="button">6</button>
+                <button id="btn" class="calc_items_btn" type="button">-</button>
+
+                <button id="btn" class="calc_items_btn" type="button">1</button>
+                <button id="btn" class="calc_items_btn" type="button">2</button>
+                <button id="btn" class="calc_items_btn" type="button">3</button>
+                <button id="btn" class="calc_items_btn" type="button">+</button>
+
+                <button id="ac" class="calc_items_btn" type="button">AC</button>
+                <button id="btn" class="calc_items_btn" type="button">0</button>
+                <button id="ce" class="calc_items_btn" type="button">CE</button>
+                <button id="equally" class="calc_items_btn equally" type="button">=</button>
+            </div>
+            <!--! end buttons -->
         </div>
-        <div id="history" class="history">History</div>
-    </div>
-    
+    </section>
+
     <script src="./js/main.js"></script>
 </body>
 </html>

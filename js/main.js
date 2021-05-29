@@ -1,35 +1,38 @@
-let screen = document.querySelector(".calculator_screen");
-let btnClicks = document.querySelectorAll("#btnClick");
-let AC = document.querySelector("#AC");
-let CE = document.querySelector("#CE");
-let equally = document.querySelector("#equally");
-let history = document.querySelector("#history");
+let ac = document.getElementById("ac");
+let ce = document.getElementById("ce");
+let equally = document.getElementById("equally");
+let history = document.getElementById("history");
+let buttons = document.querySelectorAll("#btn");
+let screen = document.getElementById("outputScreen");
 
-for(let i of btnClicks) {
-    i.addEventListener('click', () => {
-        screen.innerHTML += i.innerHTML;
+for(let btn of buttons) {
+    btn.addEventListener('click', () => {
+        screen.value += btn.innerHTML;
     });
 }
 
-AC.addEventListener('click', () => {
-    screen.innerHTML = "";
+ac.addEventListener('click', () => {
+    screen.value = "";
+    history.innerHTML = "";
 });
 
-CE.addEventListener('click', () => {
-    let str = screen.innerHTML;
-    screen.innerHTML = str.substring(0, str.length - 1);
- 
+ce.addEventListener('click', () => {
+    let arr = screen.value;
+    arr = arr.split("");
+    arr.pop();
+    screen.value = arr.join("");
 });
 
 equally.addEventListener('click', () => {
-    if(screen.innerHTML !== "") {
-        history.innerHTML += '</br>' + screen.innerHTML;
-        screen.innerHTML = eval(screen.innerHTML);
-        history.innerHTML += "=" + screen.innerHTML;
-    } else {
-        alert("данных нет");
+    let str = screen.value;
+    let reg = /[0-9]+[\+\/\*\-][0-9]+$/;
+    
+    console.log(reg.test(str));
+    if(reg.test(str)){
+        history.innerHTML = screen.value;
+        screen.value = eval(screen.value);
+        history.innerHTML += "=" + screen.value;
     }
+    
+    
 });
-
-
-

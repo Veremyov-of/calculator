@@ -1,51 +1,80 @@
-.calculator { 
-    border-radius: 10px;
-    width: 251px;
-    height: auto;
-    margin: 100px auto;
-    .history {
-        text-align: center;
-        overflow: hidden;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 5px;
-        margin: 0 auto;
-        width: 240px;
-        height: auto;
-        background-color: rgb(125, 250, 121);
-    }
+.calc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 280px;
+    height: 490px;
     &_screen {
-        padding: 5px 10px;
-        font-size: 24px;
-        letter-spacing: 1px;
+        width: 280px;
+        height: 140px;
         background-color: #212121;
-        color: rgb(255, 102, 0);
-        width: 240px;
-        height: 60px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        overflow: auto;
-    }
-    &_btns {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        &_btn {
+        color: #FF7020;
+        &_history {
+            text-align: end;
+            padding: 10px 10px;
+            width: 100%;
+            height: 90px;
+            opacity: 90%;
             font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 0.06em;
+            overflow: hidden;
+            white-space: pre-wrap;
+            
+        }
+        &_output {
+            background-color: #212121;
+            color: #FF7020;
+            outline: none;
+            border: none;
+            line-height: 50px;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 00.06em;
+            width: 100%;
+            height: 50px;
+            padding: 0 10px;
+        }
+    }
+    &_items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        &_btn {
+            display: block;
+            font-size: 24px;
+            border: none;
+            margin: 0;
+            width: 70px;
+            height: 70px;
             background-color: white;
-            width: 60px;
-            height: 60px;
-            &:hover {
-                background-color: #e0e0e0;
+
+            &:active {
+                background-color: #FF7020;
             }
         }
         .equally {
-            background-color: rgb(245, 99, 62);
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #FF7020;
+
+            }
+            &:active {
+                background-color: white;
+            }
         }
     }
-   
 }
