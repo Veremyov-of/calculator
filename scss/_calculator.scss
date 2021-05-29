@@ -52,10 +52,7 @@
             height: 70px;
             background-color: white;
 
-            &:active {
-                background-color: #FF7020;
-            }
-            &:focus {
+            &:active, &:focus {
                 outline: none;
             }
             &::-moz-focus-inner {
@@ -81,6 +78,7 @@
             &:active {
                 background-color: white;
             }
+            
         }
     }
 }
