@@ -28,7 +28,6 @@
         }
         &_output {
             background-color: #212121;
-            color: #FF7020;
             outline: none;
             border: none;
             line-height: 50px;
@@ -38,9 +37,11 @@
             width: 100%;
             height: 50px;
             padding: 0 10px;
-            -webkit-appearance: none;
-            -moz-appearance:    none;
-            appearance:         none;
+            color: #FF7020;
+            -webkit-text-fill-color: #FF7020;
+            // -webkit-appearance: none;
+            // -moz-appearance:    none;
+            // appearance:         none;
         }
     }
     &_items {
