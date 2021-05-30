@@ -75,6 +75,10 @@ body {
   background-color: white;
 }
 
+.calc_items_btn:active {
+  background-color: #FF7020;
+}
+
 .calc_items button:focus {
   border: none;
   outline: none;

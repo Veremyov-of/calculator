@@ -52,7 +52,9 @@
             height: 70px;
             background-color: white;
 
-            
+            &:active {
+                background-color: #FF7020;
+            }
         }
         button:focus {
             border: none;
