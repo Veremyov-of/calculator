@@ -38,9 +38,6 @@ body {
   letter-spacing: 0.06em;
   overflow: hidden;
   white-space: pre-wrap;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .calc_screen_output {
@@ -55,7 +52,6 @@ body {
   height: 50px;
   padding: 0 10px;
   color: #FF7020;
-  -webkit-text-fill-color: #FF7020;
 }
 
 .calc_items {

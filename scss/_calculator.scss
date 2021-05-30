@@ -21,10 +21,6 @@
             letter-spacing: 0.06em;
             overflow: hidden;
             white-space: pre-wrap;
-            -webkit-appearance: none;
-            -moz-appearance:    none;
-            appearance:         none;
-            
         }
         &_output {
             background-color: #212121;
@@ -38,10 +34,6 @@
             height: 50px;
             padding: 0 10px;
             color: #FF7020;
-            -webkit-text-fill-color: #FF7020;
-            // -webkit-appearance: none;
-            // -moz-appearance:    none;
-            // appearance:         none;
         }
     }
     &_items {
