@@ -75,12 +75,9 @@ body {
   background-color: white;
 }
 
-.calc_items button:active, .calc_items button:focus button:hover {
-  outline: none !important;
-}
-
-.calc_items button::-moz-focus-inner {
-  border: 0 !important;
+.calc_items button:focus {
+  border: none;
+  outline: none;
 }
 
 .calc_items .equally {

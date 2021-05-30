@@ -26,8 +26,6 @@ ce.addEventListener('click', () => {
 equally.addEventListener('click', () => {
     let str = screen.value;
     let reg = /[0-9]+[\+\/\*\-][0-9]+$/;
-    
-    console.log(reg.test(str));
     if(reg.test(str)){
         history.innerHTML = screen.value;
         screen.value = eval(screen.value);
