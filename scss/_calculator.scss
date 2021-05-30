@@ -52,12 +52,13 @@
             height: 70px;
             background-color: white;
 
-            &:active, &:focus {
-                outline: none;
-            }
-            &::-moz-focus-inner {
-                border: 0;
-            }
+            
+        }
+        button:active, button:focus button:hover {
+            outline: none !important;
+        }
+        button::-moz-focus-inner {
+            border: 0 !important;
         }
         .equally {
             position: relative;
