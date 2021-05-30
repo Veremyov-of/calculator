@@ -38,6 +38,9 @@ body {
   letter-spacing: 0.06em;
   overflow: hidden;
   white-space: pre-wrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .calc_screen_output {
